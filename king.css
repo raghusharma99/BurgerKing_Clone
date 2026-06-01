@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* HEADER */
+
+.header {
+    height: 75px;
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bk-logo img {
+    margin-left: 100%;
+    margin-top: 30%;
+    border-radius: 45px;
+    background-color: white;
+    height: 79px;
+    width: 79px;
+}
+
+.left-nav {
+    height: 75px;
+    width: 43vw;
+    margin-left: 9%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.store-option {
+    flex: 0.5;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+.takeaway {
+    font-weight: bolder;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #6f3c2f;
+}
+
+/* HEADER DIVIDER */
+
+.header-divider {
+    border: 1px solid rgb(130, 126, 126);
+    height: 24px;
+    width: 1px;
+    margin: 0px 12px;
+}
+
+/* STORE LOCATION */
+
+.store-location {
+    border: 1px solid #ebe9e6;
+    height: 40px;
+    width: 260px;
+    display: flex;
+    background-color: #fdfcfb;
+    border-radius: 19px;
+    padding-left: 40px;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* TOGGLE */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The track */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
+}
+
+/* The circular slider */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Toggled state */
+.toggle-switch input:checked+.slider {
+    background-color: #6f3c2f;
+    overflow: auto;
+}
+
+.toggle-switch input:checked+.slider::before {
+    transform: translateX(19px);
+}
+
+
+/* RIGHT NAVIGATION */
+
+.right-nav {
+    height: 75px;
+    width: 40vw;
+    margin: 0px 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-option {
+    padding: 0px 0px 0px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    gap: 5px;
+}
+
+
+/* BANNER */
+
+.banner {
+    position: relative;
+    height: 392px;
+    width: 1520px;
+}
+
+.banner img {
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+/* MENU */
+
+.menu-list {
+    height: 15vh;
+    width: 99vw;
+    background-color: #F4EDE5;
+    display: flex;
+}
+
+.menu {
+    height: 8vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+    background-color: #F4EDE5;
+}
+
+.menu h2 {
+    height: 33px;
+    font-size: 28px;
+    font-family: serif;
+    font-weight: bold;
+    padding-left: 8%;
+}
+
+.menu p {
+    width: 75px;
+    height: 19px;
+    font-size: 18px;
+    color: #6F3C2F;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 6%;
+}
+
+/* MENU CONTAINER */
+
+.menu-container {
+    height: 238px;
+    width: 1269px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8EBE1;
+    position: relative;
+}
+
+.menu-option {
+    width: 1520px;
+    display: flex;
+    background-color: #F8EBDF;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.food {
+    border-radius: 6px;
+    height: 108px;
+    width: 113px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.scroll {
+
+    margin-top: 20px;
+    width: 40px;
+    height: 65px;
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 -2px 4px 0 rgb(225, 224, 224);
+    left: -45px;
+    border: none;
+}
+
+.scroll img {
+    height: 15px;
+    width: 8px;
+}
+
+
+.food p {
+    height: 92px;
+    width: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* EXPLORE FULL MENU */
+
+.explore-full-menu {
+    width: 99vw;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F6F3;
+    align-items: center;
+
+}
+
+.explore-full-menu button {
+    height: 48px;
+    width: 343px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F3C2F;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: serif;
+
+
+}
+
+/* BURGUR KING WALL */
+
+.bk-wall {
+    height: 401px;
+    width: 1521px;
+    padding: 18px 114px;
+    background-color: #F8F6F3;
+}
+
+.wallpaper img {
+    height: 337px;
+    width: 1292px;
+}
+
+/* DISCLAIMER */
+
+li {
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F8F6F3;
+    gap: 3px;
+}
+
+li p {
+    padding-top: 4px;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 423px;
+    width: 1521px;
+    padding: 70px 0px 20px;
+    background-color: #323231;
+}
+
+.contact-info {
+    border: 2px solid #464644;
+    height: 237px;
+    width: 1293px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 30px;
+    margin-left: 8%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-info p {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: bold;
+    display: flex;
+    margin-top: 10px;
+    color: white;
+}
+
+.contact-info a {
+    margin-top: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    font-size: 13px;
+    background-color: #323231;
+    color: #C2C2C2;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.contact b {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    font-size: 13px;
+    background-color: #323231;
+    color: #C2C2C2;
+    padding-right: 10px;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+
+.bk-info {
+    height: 43px;
+    width: 104px;
+    padding: 0px 0px 20px;
+    justify-content: space-evenly;
+}
+
+.info {
+    width: 12vw;
+    margin-top: 40px;
+}
+
+.contact {
+    height: 40px;
+    width: 135px;
+    padding: 0px 0px 20px;
+}
+
+.bk-cares {
+    height: 43px;
+    width: 189px;
+    padding: 0px 0px 20px;
+}
+
+.legal {
+    height: 40px;
+    width: 111px;
+    padding: 0px 0px 20px;
+}
+
+.download {
+    height: 40px;
+    width: 274px;
+    padding: 0px 0px 20px;
+}
+
+.image img {
+    margin-top: 20px;
+}
+
+.connection-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+.connection-link img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.connection-link p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", sans-serif;
+    padding-left: 3%;
+    font-size: 12px;
+    color: white;
+    font: bold;
+    padding-right: 9%;
+}
+
+/* SOCIAL MEDIA */
+
+.social-media {
+    width: 14vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2%;
+}
+
+.social-media img {
+    height: 6vh;
+}
